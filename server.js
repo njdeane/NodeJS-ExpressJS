@@ -14,6 +14,10 @@ app.get("/about", function(req, res) {
   res.send("This is my bio, i love pizza.");
 });
 
+app.get("/dogs", function(req, res) {
+  res.send("this is the page that has lots of dog photos.");
+});
+
 app.listen(3000, function () {
   console.log("server started on port 3000");
 });
@@ -24,3 +28,8 @@ app.listen(3000, function () {
 // requires express and creats and app
 // then it has a get request with a function that calls back what i want in this case is a send response to the get request. inside the app.get the first part is the route that has been requested.
 // The bottom part is the local server I am hosting it all on, the app.listen part is a method that "listens for get requests ie: when the user types the address 'localhost:3000/contact then the listen method allows the user to be routed to the 'contact page'.
+
+
+// to run the server the command is --> node server.js
+// or to run the server so that it restarts each time new code is added the command is --> nodemon server.js
+

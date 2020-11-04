@@ -19,6 +19,7 @@ app.listen(3000, function () {
 });
 
 
+
 // This page:
 // requires express and creats and app
 // then it has a get request with a function that calls back what i want in this case is a send response to the get request. inside the app.get the first part is the route that has been requested.
